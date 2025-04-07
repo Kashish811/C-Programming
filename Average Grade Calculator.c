@@ -1,20 +1,19 @@
 #include <stdio.h>
 int main()
 {
-	int grade1, grade2, grade3;
-	double avg;
+	int sub, i=0;
+	float score, sum=0;
+	printf("Enter the number of subjects: ");
+	scanf("%d", &sub);
 	
-	printf("Average Grade Calculator!\n");
-	printf("Enter Grade 1:");
-	scanf("%d", &grade1);
-	printf("Enter Grade 2:");
-	scanf("%d", &grade2);
-	printf("Enter Grade 3:");
-	scanf("%d", &grade3);
+	while(i<sub)
+	{
+		printf("Enter the score of subject %d:", i+1);
+		scanf("%f", &score);
+		sum+=score;
+		i++;
+	}
 	
-	avg = ((double)grade1+grade2+grade3)/3;
-	
-	printf("Average Grade: %.2lf", avg);
+	printf("Average grade: %.2f", (float)sum/sub);
 	return 0;
-	
 }
