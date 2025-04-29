@@ -18,10 +18,10 @@ int main()
 	printf("Enter a two-digit number: ");
 	scanf("%d", &num);
 	
-	if(1<=(num%10)<10){
+	if (num >= 10 && num <= 99){
 	    result = MaxDigit(num);
-		printf("The maximum digit in the given number %d is %d", num,result);
+	    printf("The maximum digit in the given number %d is %d", num,result);
 	}else{
-		printf("Enter a TWO-digit number only!");
+            printf("Enter a TWO-digit number only!");
 	}
 }
