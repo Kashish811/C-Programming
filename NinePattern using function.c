@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int ninePattern(int length)
+void ninePattern(int length)
 {
 	int i, a=9;
 	for(i=0; i<length; i++){
